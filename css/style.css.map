@@ -6,7 +6,8 @@
         "../sass/_variables.sass",
         "../sass/_normalize.scss",
         "../sass/_settings.sass",
-        "../sass/blocks/_header.sass"
+        "../sass/blocks/_header.sass",
+        "../sass/_media.sass"
     ],
     "names": [],
     "file": "style.css"
