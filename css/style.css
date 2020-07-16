@@ -553,5 +553,8 @@ body {
   .logo {
     width: 99px;
   }
+  .navbar-top {
+    padding: 26px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
