@@ -26,6 +26,11 @@
   &-grid
     display: flex
     justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
 .stars
   flex-basis: 100%
   line-height: 1
@@ -146,8 +151,16 @@
     line-height: 25px
   &__button
     width: 100%
+    min-height: 45px
     background: $primary
     border-radius: 4px
     font-weight: 600
     font-size: 14px
     line-height: 19px
+    border: none
+    color: $light
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: #000000

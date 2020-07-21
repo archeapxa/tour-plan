@@ -564,6 +564,22 @@ body {
           justify-content: space-between;
 }
 
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -762,11 +778,21 @@ body {
 
 .booking__button {
   width: 100%;
+  min-height: 45px;
   background: #EC1F46;
   border-radius: 4px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: #000000;
 }
 
 @media (max-width: 1200px) {
