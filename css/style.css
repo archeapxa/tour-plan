@@ -885,6 +885,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1032,10 +1033,10 @@ body {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel-slide__image {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1083,14 +1084,21 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .booking {
     width: 340px;
   }
-  .slider {
-    width: 100%;
-  }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
@@ -1161,15 +1169,15 @@ body {
   .hotel-info__text {
     width: 100%;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1191,6 +1199,35 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    margin-left: -95px;
+  }
+  .reviews-slider__button--next {
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: 50%;
+    margin-right: -90px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1200,10 +1237,8 @@ body {
   .navbar-top {
     padding: 26px 0;
   }
-  .slider {
-    height: 250px;
-  }
   .hotel__slider {
+    height: 250px;
     margin-bottom: 20px;
   }
   .subscribe {
@@ -1228,7 +1263,7 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-  .slider {
+  .hotel-slider {
     height: 180px;
   }
 }
