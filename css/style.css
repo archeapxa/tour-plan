@@ -1463,15 +1463,6 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar__user {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .navbar-bottom {
     display: none;
     padding-top: 10px;
@@ -1504,6 +1495,34 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .navbar-bottom-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-bottom-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-bottom-menu__item--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom__user--mobile--visible, .navbar-bottom__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .menu-button {
     display: -webkit-box;
@@ -1738,7 +1757,7 @@ body {
   .hotel-slider {
     height: 180px;
   }
-  .navbar__search--mobile--visible {
+  .navbar-bottom__search--mobile--visible {
     width: 100%;
   }
   .search__input {

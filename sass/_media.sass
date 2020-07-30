@@ -109,9 +109,7 @@
           display: none
         &--visible
           display: flex
-    &__user
-      flex-direction: column
-      justify-content: center
+    
     &-bottom
       display: none
       padding-top: 10px
@@ -136,6 +134,21 @@
         &--mobile
           &--visible
             display: flex
+  .navbar-bottom
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: flex
+    &__user, &__search
+      &--mobile
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
   .menu
     &-button
       display: flex
@@ -291,7 +304,7 @@
 @media screen and ( max-width: 460px )
   .hotel-slider
     height: 180px
-  .navbar
+  .navbar-bottom
     &__search
       &--mobile
         &--visible
