@@ -67,4 +67,34 @@ $(document).ready(function () {
     }
   });
 
+
+  // Обработка форм
+
+  $('.form').each(function () {
+    $(this).validate({
+      rules: {
+        phone: {
+          minlength: 18
+        }
+      },
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Not less than 2 symbols"
+        },
+        email: {
+          required: "We need your email address",
+          email: "Must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please specify your phone",
+          minlength: "Please enter full number"
+        },
+      }
+    });
+  });
+
+  $('input[name ="phone"]').mask('+7 (000) 000-00-00');
+
 });
